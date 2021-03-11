@@ -2,3 +2,78 @@
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
+.garage-container {
+  display: flex;
+  width: 100%;
+  padding: 3rem 0;
+}
+
+.garage-infos {
+  flex-grow: 1;
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h1 {
+    text-align: center;
+  }
+}
+
+.form-container {
+  flex-grow: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url(https://source.unsplash.com/-flQuOWF18Y/640x426);
+  background-size: cover;
+  background-position: center;
+  padding: 3rem;
+}
+
+.cars-index {
+  flex-grow: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url(https://source.unsplash.com/-flQuOWF18Y/640x426);
+  background-size: cover;
+  background-position: center;
+  padding: 3rem;
+}
+
+.card-product {
+  overflow: hidden;
+  width: 600px;
+  height: 120px;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.card-product img {
+  height: 100%;
+  width: 120px;
+  object-fit: cover;
+}
+
+.card-product h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card-product p {
+  font-size: 12px;
+  line-height: 1.4;
+  opacity: .7;
+  margin-bottom: 0;
+  margin-top: 8px;
+}
+
+.card-product .card-product-infos {
+  padding: 16px;
+}
