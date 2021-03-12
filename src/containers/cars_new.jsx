@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import { reduxForm, Field } from 'redux-form';
+import { Link } from 'react-router-dom';
 import { createCar } from '../actions';
 
 class CarsNew extends Component {
@@ -30,8 +31,13 @@ class CarsNew extends Component {
       <div className="garage-container">
         <div className="garage-infos">
           <h1>{this.props.garage}</h1>
+          <p>This is an awesome garage with wonderfull cars</p>
+          <Link to="/" className="btn btn-primary">
+            Back to car's list
+          </Link>
         </div>
         <div className="form-container">
+          <h2>Create your car</h2>
           <form onSubmit={this.props.handleSubmit(this.onSubmit)}>
             <Field
               label="Brand"
@@ -44,6 +50,7 @@ class CarsNew extends Component {
               name="model"
               type="text"
               component={this.renderField}
+
             />
             <Field
               label="Owner"

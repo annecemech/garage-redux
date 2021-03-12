@@ -1,12 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap');
+
 .app {
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+h1, h2, h3 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: bolder;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
 }
 
 .garage-container {
   display: flex;
   width: 100%;
   padding: 3rem 0;
+  min-height: 100vh;
+}
+
+.cars-container {
+  display: flex;
+  width: 100%;
+  padding: 3rem 0;
+  min-height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .garage-infos {
@@ -15,17 +37,20 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 
   h1 {
     text-align: center;
+    text-transform: uppercase;
   }
 }
 
 .form-container {
-  flex-grow: 2;
+  flex-grow: 5;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url(https://source.unsplash.com/-flQuOWF18Y/640x426);
   background-size: cover;
   background-position: center;
@@ -33,7 +58,7 @@
 }
 
 .cars-index {
-  flex-grow: 2;
+  flex-grow: 5;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -76,4 +101,8 @@
 
 .card-product .card-product-infos {
   padding: 16px;
+}
+
+.btn-danger {
+  margin-top: 1rem;
 }
